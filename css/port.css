@@ -84,11 +84,6 @@ button {
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 480px) {
-  .header {
-    width: 480px;
-  }
-}
 .header .container {
   display: flex;
   align-items: center;
@@ -98,10 +93,19 @@ button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.67;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: none;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: none;
+    color: none;
+  }
 }
 
 .header-nav {
@@ -324,15 +328,29 @@ button {
   background: var(--section-color);
   padding-top: 62px;
   padding-bottom: 62px;
+  margin: 0 auto;
+  width: 100%;
 }
-.footer .container {
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+.footer-contakts .logo {
   display: flex;
+  justify-content: center;
 }
 
 .contakts-list {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition-property: color;
   transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -364,8 +382,20 @@ button {
 }
 
 .footer-soc {
-  margin-top: 2px;
-  margin-left: 70px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    padding-top: 8px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    padding-top: 0px;
+    margin-top: 2px;
+    margin-left: 70px;
+  }
 }
 
 .footer-soc-text {
@@ -376,6 +406,8 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .soc__link--fill {
@@ -384,8 +416,24 @@ button {
 }
 
 .footer-mailing {
-  margin-top: 2px;
-  margin-left: 93px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-mailing {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing {
+    margin-top: 2px;
+    margin-left: 93px;
+  }
 }
 
 .footer-mailing-label {
@@ -396,10 +444,11 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
 }
 
 .footer-mailing-input {
-  width: 358px;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
   margin-top: 20px;
@@ -407,6 +456,21 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--section-color);
+}
+@media screen and (min-width: 480px) {
+  .footer-mailing-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing-input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing-input {
+    width: 358px;
+  }
 }
 
 .footer-mailing-btn {
@@ -426,7 +490,12 @@ button {
   padding-left: 29px;
   outline: none;
   border: none;
-  margin-left: 12px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-mailing-icon {

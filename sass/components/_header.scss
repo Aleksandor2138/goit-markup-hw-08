@@ -1,7 +1,4 @@
 .header {
-  @media screen and (min-width: 480px) {
-      width: 480px;       
-  }
   position: relative;
   background-color: #ffffff;
   --color-text-header: #212121;
@@ -17,11 +14,9 @@
 .logo {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  @include text-style(700, 24px, 1.67, 0.03em, #2196f3);
+  @media screen and (min-width: 1200px){
+    @include text-style(none, 26px, 1.19, none, none);}
 }
 .header-nav {
   margin-left: 93px;

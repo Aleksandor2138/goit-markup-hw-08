@@ -1,5 +1,9 @@
 .hard-skil {
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    display: block;
+  }
 }
 .hard-skils {
   @include text-style(700, 36px, 1.17, 0.03em);
