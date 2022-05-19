@@ -1,0 +1,55 @@
+.soft-skils {
+  background: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 480px) {
+      margin-top: 60px;       
+  }
+}
+.soft-skils-list {
+  @media screen and (min-width: 1200px) {
+      display: flex;      
+  }
+}
+
+.soft-skils__item {
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    & + & {margin-top: 30px;}       
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;       
+  
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+}
+.soft-skils__header {
+  @include text-style($fw:700, $ls:0.03em);
+  text-transform: uppercase;
+  text-align: center;
+    margin-bottom: 10px;
+}
+.soft-skils__paragraph {
+  @include text-style(400, 14px, 1.71, 0.03em, #757575);
+}
+.soft-skils__cont {
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;       
+  }
+}
+.soft-skils__icon {
+  margin: 0 auto;
+}

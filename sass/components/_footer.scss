@@ -1,0 +1,88 @@
+.footer {
+  background: var(--section-color);
+  padding-top: 62px;
+  padding-bottom: 62px;
+  & .container {
+  display: flex;
+}
+}
+.contakts-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  transition-property: color;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  :hover,
+  :focus {
+  color: #2196f3;
+}
+}
+
+.contakts__item {
+  transition-property: color;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+  margin-bottom: 10px;
+}
+}
+.contakts__link {
+  @include text-style($fw:400, $lh:1.71, $ls:0.03em, $col:#ffffff99);
+  font-style: normal;
+  &--color {
+  color: #ffffff;
+}
+}
+.footer-soc {
+  margin-top: 2px;
+  margin-left: 70px;
+}
+.footer-soc-text {
+  @include text-style($fw:700, $ls:0.03em, $col:#ffffff);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.soc__link--fill {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+.footer-mailing {
+  margin-top: 2px;
+  margin-left: 93px;
+}
+.footer-mailing-label {
+  @include text-style($fw:700, $ls:0.03em, $col:#ffffff);
+  text-transform: uppercase;
+  display: flex;
+}
+.footer-mailing-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--section-color);
+}
+.footer-mailing-btn {
+  @include text-style(700, 16px, 1.875, 0.02em, #ffffff);
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  fill: #ffffff;
+  text-align: left;
+  padding-left: 29px;
+  outline: none;
+  border: none;
+  margin-left: 12px;
+}
+.footer-mailing-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}

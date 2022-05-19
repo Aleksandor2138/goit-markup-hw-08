@@ -1,0 +1,9 @@
+.nav__item:nth-child(1):after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  width: 48px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
