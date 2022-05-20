@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  height: 400px;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -15,20 +15,18 @@
   & .container {position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
-  }
-  @media screen and (max-width: 480px) {
-      width: 480px;       
-  }
+    transform: translate(-50%, -50%)}
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 1600px;}
 }
 .main-section__motto {
-  @include text-style(900, 44px, 1.36, 0.06em, #ffffff);
+  @include text-style(900, 26px, 1.62, 0.06em, #ffffff);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
-  @media screen and (max-width: 480px) {
-    @include text-style(900, 26px, 1.62, 0.06em, #ffffff);     
-  }
+  @media screen and (min-width: 1200px){
+    @include text-style(900, 44px, 1.36, 0.06em, #ffffff);}
 }
 .main-section__btn {
   @include text-style(700, 16px, 1.88, 0.06em, #ffffff);

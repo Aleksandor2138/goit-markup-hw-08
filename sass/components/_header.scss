@@ -3,12 +3,16 @@
   background-color: #ffffff;
   --color-text-header: #212121;
   --color-text-contact: #757575;
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
   & .container {
-    display: flex;
-    align-items: center;
+      display: flex;
+      align-items: center;
+    @media screen and (min-width: 768px){
+      padding-top: 21px;
+      padding-bottom: 21px;}
+    @media screen and (min-width: 1200px){
+      padding-top: 24px;
+      padding-bottom: 25px;}
   }
 }
 .logo {
@@ -19,7 +23,10 @@
     @include text-style(none, 26px, 1.19, none, none);}
 }
 .header-nav {
-  margin-left: 93px;
+  @media screen and (min-width: 768px){
+    margin-left: 88px;}
+  @media screen and (min-width: 1200px){
+  margin-left: 93px;}
 }
 .nav-list {
   @include text-style();
@@ -31,7 +38,7 @@
   & :focus {
     color: #2196f3;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;       
   }
 }
@@ -44,24 +51,35 @@
 }
 
 .nav__link {
-  color: var(--color-text-header);
+  @include text-style();
 }
 .contaсt-first {
   @include text-style($col: #757575);
   display: flex;
   margin-left: auto;
-  align-items: center;
-  transition-property: color, fill;
+    transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
       display: none;      
   }
+  @media screen and (min-width: 768px){
+    flex-direction: column;
+    margin-bottom: -10px;
+    }
+  @media screen and (min-width: 1200px){
+    flex-direction: row;
+    align-items: center;
+    margin-right: -30px;
+    margin-bottom: 0;}
 }
-
+.contaсt-first__item{
+  @media screen and (min-width: 768px){
+    margin-bottom: 10px;}
+  @media screen and (min-width: 1200px){
+    margin-right: 30px;
+    margin-bottom: 0;}
+}
 .contaсt-first__link {
   color: var(--color-text-contact);
   display: flex;

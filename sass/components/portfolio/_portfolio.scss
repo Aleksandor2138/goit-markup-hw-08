@@ -64,7 +64,7 @@
   padding: 20px 24px;
 }
 .portfolio__header {
-  @include text-style(700, 18px, 2, 0,6em, #212121);
+  @include text-style(700, 18px, 2, 0.06em, #212121);
   margin-bottom: 5px;
 }
 .portfolio__paragraph {
