@@ -5,21 +5,26 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
+  overflow: auto;
 }
 .modal {
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transition: transform 250ms;
   transform: translate(-50%, -50%) scale(1) rotate(0deg) skew(0deg, 0deg);
   .backdrop.is-hidden & {
-  transform: scale(0.2) rotate(90deg) skew(-75deg, -10deg);
-}
+    transform: scale(0.2) rotate(90deg) skew(-75deg, -10deg);}
+  @media screen and (min-width: 1200px){
+    top: 50%;}
+  @media screen and (min-width: 1200px){
+    width: 528px;
+    min-height: 581px;}
 }
 .modal-close-btn {
   position: absolute;
@@ -43,8 +48,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .modal-close-btn:hover &,
   .modal-close-btn:focus & {
-  fill: #2196f3;
-}
+  fill: #2196f3;}
 }
 
 .is-hidden {
@@ -53,13 +57,16 @@
   visibility: hidden;
 }
 .modal-par {
-  @include text-style(700, 20px, 1.15, 0.03em);
+  @include text-style(700, 20px, 1.5, 0.03em);
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px){
+    @include text-style(700, 20px, 1.15, 0.03em);}
 }
 .modal-form-field {
+  @include text-style (400, 12px, 1.67, 0.01em, #757575);
   margin-bottom: 12px;
 }
 .modal-input {
@@ -117,27 +124,27 @@
 }
 }
 .modal-check-text {
-  @include text-style(400, 14px, 1.71, 0.03em, #757575);
+  @include text-style (400, 12px, 1.67, 0.01em, #757575);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   .input-check:hover + & span,
-.input-check:focus + & span {
-  border-color: #2196f3;
-}
+  .input-check:focus + & span {
+    border-color: #2196f3;}
   & span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+@media screen and (min-width: 1200px){
+  @include text-style(400, 14px, 1.71, 0.03em, #757575);}
 }
 .modal-check-icon {
   fill: transparent;
