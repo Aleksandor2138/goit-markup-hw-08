@@ -293,11 +293,11 @@ button {
   fill: #2196F3;
 }
 
-.menu-nav__item:not(last-child) {
+.mob-nav__item:not(last-child) {
   margin-bottom: 32px;
 }
 
-.menu-nav__link {
+.mob-nav__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -305,19 +305,19 @@ button {
   color: #212121;
 }
 
-.menu-nav__link--color {
+.mob-nav__link--color {
   color: #2196F3;
 }
 
-.menu-contaсt-list {
+.mob-contaсt-list {
   margin-bottom: 64px;
 }
 
-.menu-contaсt__item {
+.mob-contaсt__item {
   margin-bottom: 32px;
 }
 
-.menu-contaсt__tel {
+.mob-contaсt__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.175;
@@ -326,7 +326,7 @@ button {
   margin-bottom: 32px;
 }
 
-.menu-contaсt__email {
+.mob-contaсt__email {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.165;
@@ -334,19 +334,19 @@ button {
   color: #757575;
 }
 
-.menu-soc-list {
+.mob-soc-list {
   display: flex;
 }
 
-.menu-soc__item:not(last-child) {
+.mob-soc__item:not(last-child) {
   padding: 0 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-.menu-soc__item:nth-child(4) {
+.mob-soc__item:nth-child(4) {
   border: none;
 }
 
-.menu-soc__link {
+.mob-soc__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

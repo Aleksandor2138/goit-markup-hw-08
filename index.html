@@ -47,72 +47,69 @@
           <li class="contaсt-first__item">
             <a class="contaсt-first__link link" href="info@devstudio.com"
               ><svg class="contaсt-first__icon" width="24" height="18">
-                <use href="./img/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
+                <use href="./img/icons.svg#icon-envelope"></use></svg>
+            info@devstudio.com</a>
           </li>
           <li class="contaсt-first__item">
             <a class="contaсt-first__link link" href="+380961111111">
               <svg class="contaсt-first__icon" width="15" height="24">
-                <use href="./img/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
+                <use href="./img/icons.svg#icon-smartphone"></use></svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
-      <button class="menu-open-btn" type="button"><svg class="menu-open-icon" width="40" height="40">
+      <button class="menu-open-btn" type="button">
+        <svg class="menu-open-icon" width="40" height="40">
         <use href="./img/icons.svg#icon-menu"></use></svg>
       </button>
       <div class="mob-menu is-hidden">
         <div class="container">
-          <button class="menu-close-btn" type="button"><svg class="menu-close-icon" width="40" height="40">
+          <button class="menu-close-btn" type="button">
+            <svg class="menu-close-icon" width="40" height="40">
             <use href="./img/icons.svg#icon-close_40px"></use></svg>
           </button>
-          <nav class="menu-nav">
-            <ul class="menu-nav-list list">
-              <li class="menu-nav__item">
-                <a class="menu-nav__link menu-nav__link--color link" href="./index.html">Студия</a>
+          <nav class="mob-nav">
+            <ul class="mob-nav-list list">
+              <li class="mob-nav__item">
+                <a class="mob-nav__link mob-nav__link--color link" href="./index.html">Студия</a>
               </li>
-              <li class="menu-nav__item">
-                <a class="menu-nav__link link" href="./portfolio.html"
+              <li class="mob-nav__item">
+                <a class="mob-nav__link link" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
-              <li class="menu-nav__item">
-                <a class="menu-nav__link link" href="#contaсts">Контакты</a>
+              <li class="mob-nav__item">
+                <a class="mob-nav__link link" href="#contaсts">Контакты</a>
               </li>
             </ul>
           </nav>
-          <div>
-            <ul class="menu-contaсt-list list">
-              <li class="menu-contaсt__item">
-                <a class="menu-contaсt__tel link" href="+380961111111">
-                  +38 096 111 11 11</a>
+          <div class="mob-bottom">
+            <ul class="mob-contaсt-list list">
+              <li class="mob-contaсt__item">
+                <a class="mob-contaсt__tel link" 
+                  href="+380961111111">+38 096 111 11 11</a>
               </li>
-              <li class="menu-contaсt__item">
-                <a class="menu-contaсt__email link" href="info@devstudio.com"
-                  >info@devstudio.com</a>
+              <li class="mob-contaсt__item">
+                <a class="mob-contaсt__email link" 
+                  href="info@devstudio.com">info@devstudio.com</a>
               </li>
             </ul>
-            <ul class="menu-soc-list list">
-              <li class="menu-soc__item">
-                <a
-                  href="https://www.instagram.com"
-                  class="menu-soc__link link"
-                  >Instagram</a>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc__item">
+                <a href="https://www.instagram.com"
+                  class="mob-soc__link link">Instagram</a>
               </li>
-              <li class="menu-soc__item">
-                <a href="https://twitter.com" class="menu-soc__link link"
-                  >Twitter</a>
+              <li class="mob-soc__item">
+                <a href="https://twitter.com" 
+                  class="mob-soc__link link">Twitter</a>
               </li>
-              <li class="menu-soc__item">
-                <a href="https://www.facebook.com" class="menu-soc__link link"
-                  >Facebook</a>
+              <li class="mob-soc__item">
+                <a href="https://www.facebook.com" 
+                  class="mob-soc__link link">Facebook</a>
               </li>
-              <li class="menu-soc__item">
+              <li class="mob-soc__item">
                 <a href="https://www.linkedin.com/"
-                  class="menu-soc__link link"
-                  >Linkedin</a>
+                  class="mob-soc__link link">Linkedin</a>
               </li>
             </ul>
           </div>
@@ -294,13 +291,28 @@
             </li>
             <li class="our-team__item frontend">
               <!--Frontend Developer-->
-              <img
+              <picture>
+                <source 
+                  srcset="./img/FrontendDeveloper.jpg 1x, 
+                  img/FrontendDeveloper-2x.jpg 2x"
+                  media="(min-width:1200px )" 
+                />
+                <source 
+                  srcset="./img/FrontendDeveloper-tab.jpg 1x, 
+                  img/ProductDesigner-tab-2x.jpg 2x"
+                  media="(min-width:768px )" 
+                />
+                <source 
+                  srcset="./img/FrontendDeveloper-mob.jpg 1x, 
+                  img/FrontendDeveloper-mob-2x.jpg 2x"
+                  media="(min-width:480px )" 
+                />
+                <img
                 class="our-team__img"
                 src="img/FrontendDeveloper.jpg"
                 alt="Разработчик сайтов"
-                width="270"
-                height="260"
-              />
+                />
+              </picture>
               <div class="our-team-signature">
                 <h3 class="our-team__header">Ольга Репина</h3>
                 <p class="our-team__paragraph">Frontend Developer</p>
@@ -339,13 +351,28 @@
             </li>
             <li class="our-team__item marketing">
               <!--Marketing-->
-              <img
+              <picture>
+                <source 
+                  srcset="./img/Marketing.jpg 1x, 
+                  img/Marketing-2x.jpg 2x"
+                  media="(min-width:1200px )" 
+                />
+                <source 
+                  srcset="./img/Marketing-tab.jpg 1x, 
+                  img/Marketing-tab-2x.jpg 2x"
+                  media="(min-width:768px )" 
+                />
+                <source 
+                  srcset="./img/Marketing-mob.jpg 1x, 
+                  img/Marketing-mob-2x.jpg 2x"
+                  media="(min-width:480px )" 
+                />
+                <img
                 class="our-team__img"
                 src="img/Marketing.jpg"
                 alt="Маркетолог"
-                width="270"
-                height="260"
-              />
+                />
+              </picture>
               <div class="our-team-signature">
                 <h3 class="our-team__header">Николай Тарасов</h3>
                 <p class="our-team__paragraph">Marketing</p>
@@ -384,13 +411,28 @@
             </li>
             <li class="our-team__item uidesigner">
               <!--UI Designer-->
-              <img
+              <picture>
+                <source 
+                  srcset="./img/UIDesigner.jpg 1x, 
+                  img/UIDesigner-2x.jpg 2x"
+                  media="(min-width:1200px )" 
+                />
+                <source 
+                  srcset="./img/UIDesigner-tab.jpg 1x, 
+                  img/UIDesigner-tab-2x.jpg 2x"
+                  media="(min-width:768px )" 
+                />
+                <source 
+                  srcset="./img/UIDesigner-mob.jpg 1x, 
+                  img/UIDesigner-mob-2x.jpg 2x"
+                  media="(min-width:480px )" 
+                />
+                <img
                 class="our-team__img"
                 src="img/UIDesigner.jpg"
                 alt="Прэктировщик сайтов"
-                width="270"
-                height="260"
-              />
+                />
+              </picture>
               <div class="our-team-signature">
                 <h3 class="our-team__header">Михаил Ермаков</h3>
                 <p class="our-team__paragraph">UI Designer</p>
@@ -560,46 +602,54 @@
         </button>
         <p class="modal-par">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <div class="modal-form-field"><label for="user-name" class="modal-form-label"> Имя </label>
-          <div class="modal-input-area"><input
-            type="text"
-            class="modal-input"
-            name="user-name"
-            id="user-name"
-            required
-          />
-          <svg class="modal-input-icon" width="18" height="18">
-            <use href="./img/icons.svg#icon-person"></use></div>
           <div class="modal-form-field">
-          <label for="user-telephone" class="modal-form-label">Телефон</label>
-          <div class="modal-input-area"><input
-            type="tel"
-            class="modal-input"
-            name="user-telephone"
-            id="user-telephone"
-            required
-          /><svg class="modal-input-icon" width="18" height="18">
-            <use href="./img/icons.svg#icon-phone"></use></div></div>
+          <label for="user-name" class="modal-form-label"> Имя </label>
+            <div class="modal-input-area">
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              id="user-name"
+              required
+            /><svg class="modal-input-icon" width="18" height="18">
+              <use href="./img/icons.svg#icon-person"></use></svg>
+            </div>
+          </div>
           <div class="modal-form-field">
-          <label for="user-email" class="modal-form-label">Почта</label>
-          <div class="modal-input-area"><input
-            type="email"
-            class="modal-input"
-            name="user-email"
-            id="user-email"
-            required
-          /><svg class="modal-input-icon" width="18" height="18">
-            <use href="./img/icons.svg#icon-email"></use></div></div>
+            <label for="user-telephone" class="modal-form-label">Телефон</label>
+            <div class="modal-input-area">
+              <input
+              type="tel"
+              class="modal-input"
+              name="user-telephone"
+              id="user-telephone"
+              required
+            /><svg class="modal-input-icon" width="18" height="18">
+              <use href="./img/icons.svg#icon-phone"></use></svg>
+            </div>
+          </div>
+          <div class="modal-form-field">
+            <label for="user-email" class="modal-form-label">Почта</label>
+            <div class="modal-input-area">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="user-email"
+                required
+              /><svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-email"></use></svg>
+            </div>
+          </div>
           <div>
-          <label for="user-comment" class="modal-form-label">
-            Комментарий</label
-          >
-          <textarea
-            class="modal-textarea"
-            name=" user-comment"
-            placeholder="Введите текст"
-            id="user-comment"
-          ></textarea></div>
+            <label for="user-comment" class="modal-form-label">Комментарий</label>
+            <textarea
+              class="modal-textarea"
+              name=" user-comment"
+              placeholder="Введите текст"
+              id="user-comment"
+            ></textarea>
+          </div>
           <div class="modal-form-checkbox">
             <input 
               type="checkbox" 
