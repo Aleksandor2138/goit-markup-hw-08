@@ -293,6 +293,9 @@ button {
   fill: #2196F3;
 }
 
+.mob-nav__item:hover, .mob-nav__item:focus {
+  color: #2196F3;
+}
 .mob-nav__item:not(last-child) {
   margin-bottom: 32px;
 }
@@ -304,6 +307,9 @@ button {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: #2196F3;
+}
 
 .mob-nav__link--color {
   color: #2196F3;
@@ -313,7 +319,7 @@ button {
   margin-bottom: 64px;
 }
 
-.mob-contaсt__item {
+.mob-contaсt__item:not(last-child) {
   margin-bottom: 32px;
 }
 
@@ -332,6 +338,9 @@ button {
   line-height: 1.165;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.mob-contaсt__email:hover, .mob-contaсt__email:focus {
+  color: #2196F3;
 }
 
 .mob-soc-list {
@@ -356,6 +365,12 @@ button {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .nav__item:nth-child(2):after {
