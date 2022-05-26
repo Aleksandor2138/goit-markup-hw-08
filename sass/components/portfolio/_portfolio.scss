@@ -19,6 +19,8 @@
 .portfolio__item {
   margin-bottom: 30px;
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
@@ -47,6 +49,7 @@
   @include text-style(400, 18px, 1.56, 0.03em, #ffffff);
   position: absolute;
   top: 0%;
+  height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   overflow: auto;
@@ -62,10 +65,14 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .portfolio__header {
   @include text-style(700, 18px, 2, 0.06em, #212121);
   margin-bottom: 5px;
+  display: block;
 }
 .portfolio__paragraph {
   @include text-style(400, 16px, 1.86, 0.03em, #757575);
