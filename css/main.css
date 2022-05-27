@@ -325,11 +325,20 @@ button {
 
 .mob-contaсt__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #2196F3;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 380px) {
+  .mob-contaсt__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
 }
 
 .mob-contaсt__email {
@@ -345,10 +354,12 @@ button {
 
 .mob-soc-list {
   display: flex;
+  margin-left: -10px;
 }
 
 .mob-soc__item:not(last-child) {
-  padding: 0 10px;
+  padding-right: 10px;
+  margin-left: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .mob-soc__item:nth-child(4) {
@@ -357,10 +368,19 @@ button {
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 380px) {
+  .mob-soc__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
 }
 
 .no-scroll {
@@ -1025,15 +1045,20 @@ button {
   transition: opacity 250ms, visibility 250ms;
   overflow: auto;
 }
+@media screen and (orientation: landscape) {
+  .backdrop {
+    overflow-y: auto;
+  }
+}
 
 .modal {
   padding: 40px;
-  width: 450px;
-  min-height: 609px;
+  width: 100vw;
+  min-height: 135.3333333333vw;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transition: transform 250ms;
   transform: translate(-50%, -50%) scale(1) rotate(0deg) skew(0deg, 0deg);
@@ -1041,15 +1066,24 @@ button {
 .backdrop.is-hidden .modal {
   transform: scale(0.2) rotate(90deg) skew(-75deg, -10deg);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .modal {
-    top: 50%;
+    padding: 40px;
+    width: 450px;
+    min-height: 609px;
+    top: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
+    top: 50%;
   }
 }
 
@@ -1234,10 +1268,7 @@ button {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
+  margin: 30px auto auto auto;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -1255,4 +1286,9 @@ button {
 }
 .modal-form-btn:hover, .modal-form-btn:focus {
   background: #188ce8;
+}
+@media screen and (min-width: 480px) {
+  .modal-form-btn {
+    bottom: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */

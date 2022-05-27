@@ -6,25 +6,34 @@
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
   overflow: auto;
+  @media screen and (orientation: landscape) {
+    overflow-y: auto;
+  }
 }
 .modal {
   padding: 40px;
-  width: 450px;
-  min-height: 609px;
+  width: 100vw;
+  min-height: calc(100vw*609/450);
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transition: transform 250ms;
   transform: translate(-50%, -50%) scale(1) rotate(0deg) skew(0deg, 0deg);
   .backdrop.is-hidden & {
     transform: scale(0.2) rotate(90deg) skew(-75deg, -10deg);}
-  @media screen and (min-width: 1200px){
-    top: 50%;}
+  @media screen and (min-width: 480px){
+    padding: 40px;
+    width: 450px;
+    min-height: 609px;
+    top: 70%;}
+  @media screen and (min-width: 768px){
+    top: 95%;}
   @media screen and (min-width: 1200px){
     width: 528px;
-    min-height: 581px;}
+    min-height: 581px;
+    top: 50%;}
 }
 .modal-close-btn {
   position: absolute;
@@ -161,10 +170,7 @@
 }
 .modal-form-btn {
   @include text-style(700, 16px, 1.875, 0.06em, #ffffff);
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
+  margin: 30px auto auto auto;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -181,7 +187,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  background: #188ce8;
-}
+  background: #188ce8;}
+  @media screen and (min-width: 480px) {
+    bottom: 40px;}
 }
 
