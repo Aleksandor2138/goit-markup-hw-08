@@ -99,7 +99,10 @@ button {
   justify-content: space-between;
 }
 .header .container {
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .header .container {
@@ -276,7 +279,7 @@ button {
   height: 100%;
   align-items: flex-start;
 }
-@media screen and (min-width: 768px) {
+@media screen and (mn-width: 768px) {
   .mob-menu {
     display: none;
   }
@@ -494,7 +497,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .soft-skils {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -539,6 +542,11 @@ button {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .soft-skils__header {
+    text-align: start;
+  }
 }
 
 .soft-skils__paragraph {
@@ -716,6 +724,7 @@ button {
 .our-team-signature {
   padding-top: 30px;
   padding-bottom: 30px;
+  max-width: 450px;
 }
 
 .soc-list {
@@ -1071,19 +1080,12 @@ button {
     padding: 40px;
     width: 450px;
     min-height: 609px;
-    top: 70%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
-    top: 50%;
   }
 }
 
